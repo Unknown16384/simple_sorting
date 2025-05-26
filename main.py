@@ -31,7 +31,7 @@ def compare(arr_len):
     a = timeit.timeit(lambda: bubble_sort(arr), number=1000)
     b = timeit.timeit(lambda: insertion_sort(arr), number=1000)
     c = timeit.timeit(lambda: selection_sort(arr), number=1000)
-    print(f'время сортировки пузырьком: {a*1000:.5}; вставками: {b*1000:.5}; выбором: {a*1000:.5}')
+    print(f'время сортировки пузырьком: {a*1000:.5}; вставками: {b*1000:.5}; выбором: {c*1000:.5}')
 
 compare(10)
 compare(100)
